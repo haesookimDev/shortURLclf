@@ -1,9 +1,9 @@
 class shortURLsClassification():
     def __init__(self) -> None:
-        self.shortURLList = ['Bit.ly', 'tinyurl.com' , 'bit.do', 'vvd.bz', 'url.kr', 'is.gd', 
-        't2m.kr', '3.ly', 'rb.gy', 'reurl.kr', 'abit.ly', 'blow.pw', 
-        'c11.kr', 'di.do', 'han.gl', 'koe.kr', 'lrl.kr', 'muz.so', 
-        'adf.ly', 'ouo.io', 'adfoc.us']
+        self.shortURLList = ['adfoc.us/', 'vvd.bz/', 'me2.kr/', '3.ly/', 'rb.gy/', 'adf.ly/', 'na.to/', 'nic.do/', 'koe.kr/', 'safeds.tk/', 
+        'Bit.ly/', 'gourl.kr/', 'twr.kr/', 'hana.icu/', 'han.gl/', 'bit.do/', 'gg.gg/', 'lrl.kr/', 'mlnl.me/', 'blow.pw/', 'star.net/', 
+        'asq.kr/', 'tinyurl.com/', 'abit.ly/', 'c11.kr/', 'di.do/', 'ouo.io/', 'wiv.kr/', 'url.sg/', 'vot.kr/', 'muz.so/', 't.ly/', 't2m.kr/', 
+        'reurl.kr/', 'flic.kr/', 'url.kr/', 'vo.la/', 'fw.sg/', 't.co/', 'is.gd/', 'zrr.kr/', 'wo.to/']
         self.isDomain = False
         self.shortURL = False
         self.result = {}
@@ -25,5 +25,6 @@ class shortURLsClassification():
                 self.isDomain = True
                 break
             else:
+                self.isDomain = False
                 continue
         return self.isDomain
